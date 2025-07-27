@@ -1,9 +1,9 @@
 package com.scaler.productservicedecmwfeve.services;
 
+import java.util.List;
+
 import com.scaler.productservicedecmwfeve.exceptions.ProductNotExistsException;
 import com.scaler.productservicedecmwfeve.models.Product;
-
-import java.util.List;
 
 public interface ProductService {
 
@@ -12,4 +12,6 @@ public interface ProductService {
     List<Product> getAllProducts();
 
     Product replaceProduct(Long id, Product product);
+
+    Product addNewProduct(Product product);
 }

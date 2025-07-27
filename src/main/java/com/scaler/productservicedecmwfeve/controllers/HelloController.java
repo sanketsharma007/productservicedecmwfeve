@@ -15,8 +15,8 @@ public class HelloController {
 
     // GET /hello/say
     @GetMapping("/say/{name}/{times}")
-    public String sayHello(@PathVariable("name") String name,
-                           @PathVariable("times") int times) {
+    public String sayHello(@PathVariable String name,
+                           @PathVariable int times) {
         String answer = "";
 
         for (int i = 0; i < times; ++i) {
